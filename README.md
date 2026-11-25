@@ -135,7 +135,7 @@ The workers use these pinned artifacts under the current Windows user's `%LOCALA
 | NLP | `runs\nlp\milestone-11-v1\linear_svc.joblib` (38,506 bytes) | `8c7835a9c065a4a672d9ed8639a962fb5a716a7054d2d84ce4d28731c8eae522` | Python 3.12.10; versions in `ml/nlp/requirements-m11.txt` |
 | CV | `runs\cv\metu-resnet18-m12-v1\resnet18-inference.pt` (44,787,275 bytes) | `f98d6d635a260cbdfbdc9f23b2ac718fd074be93db2e1666023e75cceb94f027` | Python 3.12; CUDA 12.6; versions in `ml/cv/milestone12/requirements.txt` |
 
-The API workers validate model hashes and frozen metadata before loading. The CV worker also requires a CUDA-capable runtime. There is currently no public model-binary download URL. Do not copy model files from an untrusted source or enable these features expecting a clone to have them.
+The API workers validate model hashes and frozen metadata before loading. The CV worker also requires a CUDA-capable runtime. There is currently no public model-binary download URL. The combined trained checkpoints do not have a separately documented release license, and redistribution of their upstream pretrained weights has not been independently cleared; this repository therefore omits them until that review and a trusted release source exist. No Git LFS artifacts are published. Do not copy model files from an untrusted source or enable these features expecting a clone to have them.
 
 To reproduce the research pipelines from their cited sources, use the dataset-specific instructions before running training:
 
