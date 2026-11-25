@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "mapping_version": "1.0.0-draft.1",
+  "status": "proposed_for_review",
+  "model_version": null,
+  "source": {
+    "dataset_doi": "10.17632/cb8d2nsjss.1",
+    "split_manifest_sha256": "0d8c751f618a7eaa8b30b74ef349db8f68fb1de716a40704cd03d8495c3474d7"
+  },
+  "source_row_policy": {
+    "maintenance_type": "UPM",
+    "quarantine_work_order_with_multiple_system_codes": true,
+    "quarantine_normalized_description_with_multiple_system_codes": true
+  },
+  "labels": [
+    {
+      "label": "plumbing",
+      "category_name_for_review": "Plumbing",
+      "category_id": null,
+      "source_system_code": "D20",
+      "allowed_source_subsystem_codes": [
+        "D2010",
+        "D2020",
+        "D2030",
+        "D2040"
+      ]
+    },
+    {
+      "label": "hvac",
+      "category_name_for_review": "HVAC",
+      "category_id": null,
+      "source_system_code": "D30",
+      "allowed_source_subsystem_codes": [
+        "D3020",
+        "D3030",
+        "D3040",
+        "D3050",
+        "D3060",
+        "D3070"
+      ]
+    },
+    {
+      "label": "electrical",
+      "category_name_for_review": "Electrical",
+      "category_id": null,
+      "source_system_code": "D50",
+      "allowed_source_subsystem_codes": [
+        "D5010",
+        "D5020"
+      ]
+    }
+  ],
+  "fallback": {
+    "action": "manual_review",
+    "suggested_category_id": null
+  }
+}
